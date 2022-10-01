@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: 'Alkalami', serif;
+  margin: 0, 10px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+background-color: #e5e5f7;
+}
+
+h1 {
+ font-size: 3rem;
+}
+
+/* h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+} */
+
+p, a {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Poor Man's Way 
+main {
+  display: block;
+  margin: 0 auto;
+  width: 1140px;
+  text-align: center;
+} */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+footer {
+  text-align: center;
+}
+
+footer > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+
+
+h1 span {
+  display: block;
+}
+
+input {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo {
+  max-width: 7.5%;
+  margin: 0;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border: 2px solid #e5e4e2;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  width: 258px;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  border: 2px solid #e5e4e2;
+}
+
+.instruction {
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+/* Animations */
+
+footer .logo {
+
+	transform: rotateY(45deg);
+	animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(30deg);}
+	to {transform: rotateY(-30deg);}
+}
